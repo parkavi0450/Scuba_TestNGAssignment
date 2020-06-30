@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="2" total="8" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> SquareRoot]]>
+    </line>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> Division]]>
+    </line>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> SquareRoot]]>
+    </line>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> Multiplication]]>
+    </line>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> Subtraction]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="722" started-at="2020-06-30T13:24:17 IST" finished-at="2020-06-30T13:24:17 IST">
+    <groups>
+      <group name="DIV">
+        <method signature="Parameterization.div(int, int)[pri:0, instance:scuba.Parameterization@2758fe70]" name="div" class="scuba.Parameterization"/>
+      </group> <!-- DIV -->
+      <group name="SUB">
+        <method signature="Parameterization.sub(float, float)[pri:0, instance:scuba.Parameterization@2758fe70]" name="sub" class="scuba.Parameterization"/>
+      </group> <!-- SUB -->
+      <group name="ADD">
+        <method signature="Parameterization.add(float, float, float)[pri:0, instance:scuba.Parameterization@2758fe70]" name="add" class="scuba.Parameterization"/>
+      </group> <!-- ADD -->
+      <group name="SQUARE">
+        <method signature="TestNGData.squareRoot(int, int)[pri:0, instance:scuba.TestNGData@1f36e637]" name="squareRoot" class="scuba.TestNGData"/>
+      </group> <!-- SQUARE -->
+      <group name="MUL">
+        <method signature="Parameterization.mul(float, float, float, float)[pri:0, instance:scuba.Parameterization@2758fe70]" name="mul" class="scuba.Parameterization"/>
+      </group> <!-- MUL -->
+    </groups>
+    <test name="Test" duration-ms="722" started-at="2020-06-30T13:24:17 IST" finished-at="2020-06-30T13:24:17 IST">
+      <class name="scuba.TestNGData">
+        <test-method status="PASS" signature="squareRoot(int, int)[pri:0, instance:scuba.TestNGData@1f36e637]" name="squareRoot" duration-ms="246" started-at="2020-06-30T13:24:17 IST" data-provider="SquareRoot" finished-at="2020-06-30T13:24:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> SquareRoot]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- squareRoot -->
+        <test-method status="PASS" signature="squareRoot(int, int)[pri:0, instance:scuba.TestNGData@1f36e637]" name="squareRoot" duration-ms="63" started-at="2020-06-30T13:24:17 IST" data-provider="SquareRoot" finished-at="2020-06-30T13:24:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[18]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[33]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> SquareRoot]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- squareRoot -->
+      </class> <!-- scuba.TestNGData -->
+      <class name="scuba.Parameterization">
+        <test-method status="FAIL" signature="add(float, float, float)[pri:0, instance:scuba.Parameterization@2758fe70]" name="add" duration-ms="85" started-at="2020-06-30T13:24:17 IST" finished-at="2020-06-30T13:24:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[26.12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[72.34]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[59.55]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [158.01] but found [158.00999450683594]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [158.01] but found [158.00999450683594]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at scuba.Parameterization.add(Parameterization.java:15)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="div(int, int)[pri:0, instance:scuba.Parameterization@2758fe70]" name="div" duration-ms="39" started-at="2020-06-30T13:24:17 IST" finished-at="2020-06-30T13:24:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> Division]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- div -->
+        <test-method status="PASS" signature="mul(float, float, float, float)[pri:0, instance:scuba.Parameterization@2758fe70]" name="mul" duration-ms="35" started-at="2020-06-30T13:24:17 IST" finished-at="2020-06-30T13:24:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[26.12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[72.34]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[59.55]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[66.78]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> Multiplication]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- mul -->
+        <test-method status="PASS" signature="sub(float, float)[pri:0, instance:scuba.Parameterization@2758fe70]" name="sub" duration-ms="8" started-at="2020-06-30T13:24:17 IST" finished-at="2020-06-30T13:24:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[26.12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[72.34]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> Subtraction]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sub -->
+      </class> <!-- scuba.Parameterization -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

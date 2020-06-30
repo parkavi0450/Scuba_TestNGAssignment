@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <parameter name="a" value="26.12"/>
+  <parameter name="b" value="72.34"/>
+  <parameter name="c" value="59.55"/>
+  <parameter name="d" value="66.78"/>
+  <parameter name="x" value="50"/>
+  <parameter name="y" value="12"/>
+  <test thread-count="5" name="Test(failed)" parallel="classes">
+    <groups>
+      <run>
+        <include name="ADD"/>
+        <include name="SUB"/>
+        <include name="MUL"/>
+        <include name="DIV"/>
+        <include name="SQUARE"/>
+        <exclude name="MOD"/>
+        <exclude name="NEGATE"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="scuba.Parameterization">
+        <methods>
+          <include name="add" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- scuba.Parameterization -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
